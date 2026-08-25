@@ -11,12 +11,13 @@
     <header class="site"><span class="brand">CardialOS</span><span class="by">by thetinyapp</span></header>
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 18 June 2026</p>
+    <p class="updated">Last updated: 25 August 2026</p>
 
     <p>
       CardialOS is a personal cardiac-monitoring app. This policy explains what data CardialOS uses and how it
       is handled. The short version: <strong>your health data stays on your device.</strong> CardialOS has
-      no account and no sign-in, and we never receive, store, or transmit your health data. We do collect
+      an account so it can keep you signed in and let you delete that account — signing in does not
+      upload your health data, and we never receive, store, or transmit it. We do collect
       anonymized product-usage and crash diagnostics to keep the app working well — never your health
       values (see <em>Analytics &amp; diagnostics</em> below).
     </p>
@@ -46,12 +47,26 @@
       stored locally on your device only.
     </p>
 
+    <h2>Your account</h2>
+    <p>
+      CardialOS requires <strong>Sign in with Apple</strong>. When you sign in, Apple gives us two
+      things: a random identifier that stands for you within our apps, and an email address — your
+      real one or, if you choose <em>Hide My Email</em>, a private relay address Apple manages. We
+      never see your Apple password.
+    </p>
+    <p>
+      On our server we store that identifier, that email address, and session records — which app
+      you signed in to, an identifier for the device, and timestamps — so you stay signed in and can
+      revoke your sessions. That is the complete list; <strong>your health data is not on it</strong>
+      and signing in does not sync or upload anything the app has read from Apple Health.
+    </p>
+
     <h2>What we do not do</h2>
     <ul>
       <li>We do <strong>not</strong> sell, rent, or share your health data with anyone.</li>
       <li>We do <strong>not</strong> use your health data for advertising or marketing.</li>
       <li>We do <strong>not</strong> transmit your health data off your device or to any server.</li>
-      <li>We do <strong>not</strong> require an account, name, or email to use CardialOS.</li>
+      <li>We do <strong>not</strong> link your account to your health data or to the diagnostics below.</li>
     </ul>
 
     <h2>Analytics &amp; diagnostics</h2>
@@ -66,7 +81,7 @@
         method") — <strong>behaviour only, never the underlying health values</strong>.</li>
       <li>Crash and error reports (such as a stack trace, error type, and device model and OS version).</li>
       <li>A randomly-generated, anonymous device identifier so these events can be grouped — it is
-        <strong>not</strong> linked to your name, email, or any account (CardialOS has none).</li>
+        <strong>not</strong> linked to your name, your email, or your CardialOS account.</li>
     </ul>
     <p>
       We do <strong>not</strong> send your heart rate, HRV, sleep, workouts, or any other health values
@@ -83,7 +98,7 @@
     <p>
       When you allow it, CardialOS sends your approximate coordinates to <strong>Open-Meteo</strong>
       (open-meteo.com), a weather service, to look up the current temperature and humidity for your
-      area. The request carries no name, account, or identifier (CardialOS has none). We do
+      area. The request carries no name, account, or identifier. We do
       <strong>not</strong> store your location, link it to any identity, sell or share it, or use it
       for advertising or tracking. You can change or revoke the location permission at any time in
       <strong>iOS Settings → Privacy &amp; Security → Location Services → CardialOS</strong> (or
@@ -99,15 +114,18 @@
       <li><strong>Android:</strong> Health Connect → App permissions → CardialOS.</li>
     </ul>
     <p>
-      Because CardialOS stores nothing on a server, <strong>deleting the app removes its local data</strong>
-      from your device. Your underlying Apple Health / Health Connect records are unaffected and remain
-      under your control.
+      <strong>Deleting the app removes its local data</strong> from your device; your underlying
+      Apple Health / Health Connect records are unaffected and remain under your control. Your
+      account is separate: delete it from <strong>Manage</strong> inside the app, and the account,
+      its email and every session are removed from our server immediately — existing sign-ins stop
+      working at once.
     </p>
 
     <h2>Data retention &amp; deletion</h2>
     <p>
       Your health data is processed on your device and is never stored on our servers, so there is no
-      health data for us to retain. The anonymized product-usage and crash diagnostics described above
+      health data for us to retain. Your account data is kept until you delete the account, from
+      inside the app or by email. The anonymized product-usage and crash diagnostics described above
       are retained by our providers (PostHog and Google Firebase) for up to <strong>12 months</strong>,
       after which they are deleted. To request deletion of any data associated with your device, email
       <a href="mailto:resources@thetinyapp.com">resources@thetinyapp.com</a> and we will action it within
