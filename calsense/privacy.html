@@ -11,13 +11,15 @@
     <header class="site"><span class="brand">Calsense</span><span class="by">by thetinyapp</span></header>
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 25 August 2026</p>
+    <p class="updated">Last updated: 27 August 2026</p>
 
     <p>
       Calsense is a nutrition-tracking app. This policy explains what data Calsense handles. The short version:
       <strong>what you log stays on your device.</strong> Calsense has an account so it can keep you
       signed in; it does not upload your log, and it contains no
-      analytics, no advertising and no third-party tracking.
+      analytics, no advertising and no third-party tracking. When you ask for a dish to be analysed,
+      the description you typed is sent to make the estimate — that is the one thing that leaves
+      your device at your request, and it is explained below.
     </p>
 
     <h2>What Calsense stores on your device</h2>
@@ -35,12 +37,37 @@
     <p>
       On our server we store that identifier, that email address, and session records — which app
       you signed in to, an identifier for the device, and timestamps — so you stay signed in and
-      can see and revoke your sessions. That is the complete list; your log is not on it.
+      can see and revoke your sessions.
+    </p>
+    <p>
+      If you enter them, your basic profile — birth date, sex, height and weight — is saved to
+      that account so our other health apps you sign in to can share it, and so you do not type
+      it twice. Each of these fields is optional; one you have not entered is simply absent.
+    </p>
+    <p>
+      When you ask for a dish to be analysed, we also record that an analysis happened — which
+      account, which app, and when — so we can limit how many analyses a day each account gets.
+      That record says nothing about the food. That is the complete list; your log is not on it.
+    </p>
+
+    <h2>Food analysis</h2>
+    <p>
+      Calsense first looks a dish up in a reference list built into the app, on your device. Only
+      when the dish is not in that list, and you ask for it to be analysed, is the description you
+      typed sent to our server. The server passes it to <strong>Anthropic</strong>, the AI provider
+      whose model produces the nutrition estimate, and returns the estimate to your phone. We do
+      not store the description; the resulting meal entry is saved only on your device. Anthropic
+      processes the description as a service provider under its
+      <a href="https://www.anthropic.com/legal/commercial-terms">commercial terms</a>, which do not
+      permit it to train models on this data. Do not put personal details in a dish description —
+      it is meant for food.
     </p>
 
     <h2>What we do not do</h2>
     <ul>
-      <li>We do <strong>not</strong> receive, store or transmit what you log in the app.</li>
+      <li>We do <strong>not</strong> receive or store your food log. The one exception you control:
+        a dish description you explicitly send for analysis is transmitted to make the estimate,
+        and is not stored.</li>
       <li>We do <strong>not</strong> sell, rent or share your data with anyone.</li>
       <li>We do <strong>not</strong> track you, profile you, or serve advertising.</li>
       <li>We do <strong>not</strong> use third-party analytics, crash reporting or tracking SDKs.</li>
@@ -49,7 +76,8 @@
     <h2>Deleting your data</h2>
     <p>
       To delete your account, email <a href="mailto:resources@thetinyapp.com">resources@thetinyapp.com</a>
-      and we will remove the account, its email and every session from our server within 30 days;
+      and we will remove the account, its email, its profile fields, its analysis records and every
+      session from our server within 30 days;
       existing sign-ins stop working once that is done. What is stored on your device goes when you
       delete the app.
     </p>
