@@ -14,16 +14,16 @@
     <p class="updated">Last updated: 27 August 2026</p>
 
     <p>
-      Calsense is a nutrition-tracking app. This policy explains what data Calsense handles. The short version:
-      <strong>what you log stays on your device.</strong> Calsense has an account so it can keep you
-      signed in; it does not upload your log, and it contains no
-      analytics, no advertising and no third-party tracking. When you ask for a dish to be analysed,
-      the description you typed is sent to make the estimate — that is the one thing that leaves
-      your device at your request, and it is explained below.
+      Calsense is a nutrition-tracking app. This policy explains what data Calsense handles. The short
+      version: Calsense has an account, which keeps you signed in and holds your basic profile; when you
+      ask for a dish to be analysed, what you send — a description, or a photo of your plate — goes to
+      our server and to an AI provider to make the estimate; your meal diary itself is stored in the app
+      on your device and is not synced to your account. Calsense contains no analytics, no advertising
+      and no third-party tracking. Each of those is explained below.
     </p>
 
     <h2>What Calsense stores on your device</h2>
-    <p>Calsense stores the meals you log, your body measurements, your goal and targets, any health conditions or dietary patterns you enter, your hydration and supplement records, and your app preferences. All of it is written to the app's own storage on your device, and none of it is uploaded. Signing in does not sync it; two people signing in on one device still share one log.</p>
+    <p>Calsense stores the meals you log, your body measurements, your goal and targets, any health conditions or dietary patterns you enter, your hydration and supplement records, and your app preferences in the app's own storage on your device. Signing in does not sync the diary; two people signing in on one device still share one log. The parts of this that do reach our server — your basic profile, and what you submit for analysis — are listed in the next two sections.</p>
 
     <h2>Your account</h2>
     <p>
@@ -47,27 +47,31 @@
     <p>
       When you ask for a dish to be analysed, we also record that an analysis happened — which
       account, which app, and when — so we can limit how many analyses a day each account gets.
-      That record says nothing about the food. That is the complete list; your log is not on it.
+      That record says nothing about the food. That is the complete list of what our server holds
+      about you.
     </p>
 
     <h2>Food analysis</h2>
     <p>
-      Calsense first looks a dish up in a reference list built into the app, on your device. Only
-      when the dish is not in that list, and you ask for it to be analysed, is the description you
-      typed sent to our server. The server passes it to <strong>Anthropic</strong>, the AI provider
-      whose model produces the nutrition estimate, and returns the estimate to your phone. We do
-      not store the description; the resulting meal entry is saved only on your device. Anthropic
-      processes the description as a service provider under its
+      Calsense first looks a dish up in a reference list built into the app, on your device. When
+      the dish is not in that list and you ask for it to be analysed, what you submit is sent to our
+      server: the description you typed, and — when you use the camera or choose a picture — a
+      photo of your plate. The server passes it to <strong>Anthropic</strong>, the AI provider whose
+      model produces the nutrition estimate, and returns the estimate to your phone. Our server
+      does not keep the description or the photo; the meal entry the estimate becomes, and any
+      photo shown with it, are saved in the app on your device. Anthropic processes what it receives
+      as a service provider under its
       <a href="https://www.anthropic.com/legal/commercial-terms">commercial terms</a>, which do not
-      permit it to train models on this data. Do not put personal details in a dish description —
-      it is meant for food.
+      permit it to train models on this data; how long Anthropic retains it is governed by those
+      terms, not by us. A photo can show more than food — a face, a room, a document on the
+      table — so frame the plate, and do not put personal details in a dish description.
     </p>
 
     <h2>What we do not do</h2>
     <ul>
-      <li>We do <strong>not</strong> receive or store your food log. The one exception you control:
-        a dish description you explicitly send for analysis is transmitted to make the estimate,
-        and is not stored.</li>
+      <li>We do <strong>not</strong> sync or store your food diary. What you explicitly send for
+        analysis — a description or a photo — is transmitted to make the estimate and is not kept
+        by our server.</li>
       <li>We do <strong>not</strong> sell, rent or share your data with anyone.</li>
       <li>We do <strong>not</strong> track you, profile you, or serve advertising.</li>
       <li>We do <strong>not</strong> use third-party analytics, crash reporting or tracking SDKs.</li>
@@ -93,8 +97,9 @@
 
     <h2>Changes</h2>
     <p>
-      If this policy changes, the date at the top of this page changes with it. If Calsense ever gains a
-      feature that sends your log anywhere, this policy will say so plainly before that feature ships.
+      If this policy changes, the date at the top of this page changes with it. This version was
+      written ahead of photo analysis shipping, as an earlier version promised it would be: if
+      Calsense ever sends anything further off your device, this page will say so before it does.
     </p>
 
     <h2>Contact</h2>
