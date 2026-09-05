@@ -11,13 +11,13 @@
     <header class="site"><span class="brand">CarveOS</span><span class="by">by thetinyapp</span></header>
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 25 August 2026</p>
+    <p class="updated">Last updated: 6 September 2026</p>
 
     <p>
       CarveOS is a health app. This policy explains what data CarveOS handles. The short version:
       <strong>what you log stays on your device.</strong> CarveOS has an account so it can keep you
-      signed in; it does not upload your log, and it contains no
-      analytics, no advertising and no third-party tracking.
+      signed in; it does not upload your log, and it contains no advertising and no cross-app or cross-site tracking. It does use one analytics
+      service, PostHog, described below.
     </p>
 
     <h2>What CarveOS stores on your device</h2>
@@ -42,9 +42,34 @@
     <ul>
       <li>We do <strong>not</strong> receive, store or transmit what you log in the app.</li>
       <li>We do <strong>not</strong> sell, rent or share your data with anyone.</li>
-      <li>We do <strong>not</strong> track you, profile you, or serve advertising.</li>
-      <li>We do <strong>not</strong> use third-party analytics, crash reporting or tracking SDKs.</li>
+      <li>We do <strong>not</strong> track you across other companies' apps or websites, build an advertising profile of you, or serve advertising.</li>
+      <li>We use <strong>one</strong> third-party analytics SDK, PostHog, limited to the events listed under “Product analytics” above. We do <strong>not</strong> use a crash-reporting or advertising SDK.</li>
     </ul>
+
+
+    <h2>Product analytics</h2>
+    <p>
+      CarveOS uses <strong>PostHog</strong> for product analytics. It records how the app is used so we can find what is broken and what is confusing. It is
+      deliberately narrow, and this list is exhaustive:
+    </p>
+    <ul>
+      <li><strong>Screen views</strong> — the name of the screen you opened, e.g. "today" or "settings".</li>
+      <li><strong>Sign-in outcomes</strong> — that a sign-in succeeded or failed, and which provider
+          (Apple or Google) was used. Cancelling a sign-in sheet records nothing.</li>
+      <li><strong>Error reports</strong> — the type of an error and where in the app it happened.</li>
+      <li>Every event carries the app's name, so events from CarveOS can be told from those of our other apps.</li>
+    </ul>
+    <p>
+      <strong>What analytics never receives: your profile fields, your body measurements, or any answer you gave during setup.</strong> Those values are not sent to PostHog by
+      any code path in the app.
+    </p>
+    <p>
+      <strong>These events are not linked to you.</strong> The app never sends your user id, your email
+      address or your name to PostHog, and never asks it to build a profile of you. PostHog does receive
+      the technical information any network request carries, including your IP address, and it acts as
+      our processor under our instructions. It does not sell your data or use it for advertising, and we
+      do not combine these events with data from other companies' apps or websites.
+    </p>
 
     <h2>Deleting your data</h2>
     <p>
