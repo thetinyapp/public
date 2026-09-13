@@ -11,17 +11,49 @@
     <header class="site"><span class="brand">KcalOS</span><span class="by">by thetinyapp</span></header>
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 6 September 2026</p>
+    <p class="updated">Last updated: 13 September 2026</p>
 
     <p>
       KcalOS is a calorie- and macro-tracking app. This policy explains what data KcalOS handles. The short version:
-      <strong>what you log stays on your device.</strong> KcalOS has an account so it can keep you
-      signed in; it does not upload your log, and it contains no advertising and no cross-app or cross-site tracking. It does use one analytics
-      service, PostHog, described below.
+      <strong>what you log is saved to your account, and only what you log.</strong> Your diary, your
+      weight history, your daily water and your supplement checklist are stored on our server so they
+      survive a new phone. The answers you gave during setup — beyond four shared with our other apps —
+      stay on your device. There is no advertising and no cross-app or cross-site tracking. We use one
+      analytics service, PostHog, described below.
     </p>
 
-    <h2>What KcalOS stores on your device</h2>
-    <p>KcalOS stores the foods you log, your body measurements, your goal and targets, and your app preferences. All of it is written to the app's own storage on your device, and none of it is uploaded. Signing in does not sync it; two people signing in on one device still share one log.</p>
+    <h2>What is saved to your account</h2>
+    <p>
+      These are stored on our server, under your account, and are also kept on your device so the app
+      opens instantly and works with no signal:
+    </p>
+    <ul>
+      <li><strong>Your diary</strong> — each entry's name, portion, meal, calories and whatever macros are known, when you logged it, and any note you wrote on it.</li>
+      <li><strong>Your weight history</strong> — each weight in kilograms, its date, and any note.</li>
+      <li><strong>Your daily water total.</strong></li>
+      <li><strong>Your supplement checklist</strong> — which supplements you ticked on which day.</li>
+    </ul>
+    <p>
+      What you log offline is held on the device and sent when there is a connection again. Nothing is
+      lost while you have no signal.
+    </p>
+    <p>
+      <strong>Signing out clears this device's copy</strong>, because your account keeps one. Signing
+      back in brings it down again. Two people using one phone therefore no longer share a diary.
+    </p>
+
+    <h2>What stays on your device</h2>
+    <p>These are written to the app's own storage and are <strong>not</strong> uploaded:</p>
+    <ul>
+      <li>Your goal, activity level and training phase.</li>
+      <li>Your ethnicity, your dietary patterns and any health conditions you entered.</li>
+      <li>The supplements you chose to track.</li>
+      <li>Your calorie and macro targets, and your unit preferences.</li>
+      <li>Anything you type into food search. The food table ships inside the app, so searching it makes no network request.</li>
+    </ul>
+    <p>
+      Four setup answers are the exception and are covered under <em>Your account</em> below.
+    </p>
 
     <h2>Your account</h2>
     <p>
@@ -35,15 +67,24 @@
     <p>
       On our server we store that identifier, that email address, and session records — which app
       you signed in to, an identifier for the device, and timestamps — so you stay signed in and
-      can see and revoke your sessions. That is the complete list; your log is not on it.
+      can see and revoke your sessions.
+    </p>
+    <p>
+      We also store a small shared profile that our apps have in common: your date of birth, your sex,
+      your height and your weight. It is shared so that another of our apps can offer those four back
+      instead of asking you again. No other setup answer is on it.
+    </p>
+    <p>
+      And we store what you log — see <em>What is saved to your account</em> above.
     </p>
 
     <h2>What we do not do</h2>
     <ul>
-      <li>We do <strong>not</strong> receive, store or transmit what you log in the app.</li>
+      <li>We do <strong>not</strong> use what you log for anything except giving it back to you in this app. It is not analysed for advertising, not sold, and not shared.</li>
+      <li>We do <strong>not</strong> send what you log to our analytics service. See “Product analytics” below — that list is exhaustive and no food, weight or target value is on it.</li>
       <li>We do <strong>not</strong> sell, rent or share your data with anyone.</li>
       <li>We do <strong>not</strong> track you across other companies' apps or websites, build an advertising profile of you, or serve advertising.</li>
-      <li>We use <strong>one</strong> third-party analytics SDK, PostHog, limited to the events listed under “Product analytics” above. We do <strong>not</strong> use a crash-reporting or advertising SDK.</li>
+      <li>We use <strong>two</strong> third-party SDKs that receive data: PostHog, limited to the events listed under “Product analytics” above, and Firebase Crashlytics, which receives the crash reports described there. We do <strong>not</strong> use an advertising SDK.</li>
     </ul>
 
 
@@ -77,9 +118,16 @@
     <h2>Deleting your data</h2>
     <p>
       To delete your account, email <a href="mailto:resources@thetinyapp.com">resources@thetinyapp.com</a>
-      and we will remove the account, its email and every session from our server within 30 days;
-      existing sign-ins stop working once that is done. What is stored on your device goes when you
-      delete the app.
+      and we will remove the account, its email, every session <strong>and everything you have
+      logged</strong> from our server within 30 days; existing sign-ins stop working once that is done.
+    </p>
+    <p>
+      Signing out is not deletion: it clears this device's copy and leaves your account's copy in
+      place, so signing back in restores it.
+    </p>
+    <p>
+      Deleting the app removes what is on the device. Your account keeps its copy until you ask us to
+      delete it.
     </p>
     <p>
       If your device backs up to iCloud, your KcalOS data may be included in that backup. That backup is
@@ -93,8 +141,12 @@
 
     <h2>Changes</h2>
     <p>
-      If this policy changes, the date at the top of this page changes with it. If KcalOS ever gains a
-      feature that sends your log anywhere, this policy will say so plainly before that feature ships.
+      If this policy changes, the date at the top of this page changes with it.
+    </p>
+    <p>
+      An earlier version of this page promised that if KcalOS ever gained a feature that sent your log
+      anywhere, this policy would say so plainly before that feature shipped. That feature is diary
+      sync, and this update is that notice.
     </p>
 
     <h2>Contact</h2>
