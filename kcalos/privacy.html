@@ -19,7 +19,9 @@
       weight history, your daily water and your supplement checklist are stored on our server so they
       survive a new phone. The answers you gave during setup — beyond four shared with our other apps —
       stay on your device. There is no advertising and no cross-app or cross-site tracking. We use one
-      analytics service, PostHog, described below.
+      analytics service, PostHog, described below. If you ask KcalOS to estimate a meal, the photo
+      and the words you give it go to our server and on to an AI model for the estimate. We keep the
+      photo on your account, and <strong>deleting the entry does not delete the photo</strong>.
     </p>
 
     <h2>What is saved to your account</h2>
@@ -55,6 +57,39 @@
       Four setup answers are the exception and are covered under <em>Your account</em> below.
     </p>
 
+    <h2>Estimating a meal</h2>
+    <p>
+      KcalOS can estimate what is on a plate from a photo, a description, or both.
+      <strong>It only ever happens when you ask for it</strong>, on the Estimate a meal screen.
+      Nothing is sent for an estimate at any other time, and the built-in food table needs no
+      connection and no server.
+    </p>
+    <p>
+      When you ask, we send what you gave us to our own server, which passes it to an AI model and
+      returns an estimate of the nutrition. It is a guess, it is labelled as one in the app, and you
+      can correct every figure before you save it. <strong>Your calorie and macro targets never come
+      from a model</strong> — those are arithmetic over a published equation and always have been.
+    </p>
+    <p>
+      <strong>The photo is not kept on your phone.</strong> KcalOS keeps no copy of it at all: the
+      only copy is on your account, which is what lets the picture show up on a new phone and survive
+      a reinstall. When you are offline, the entry shows a food icon rather than the picture, because
+      there is nothing on the device to show.
+    </p>
+    <p>
+      <strong>Location and camera details are removed before the photo leaves your phone.</strong>
+      The image is re-encoded from its pixels, so GPS coordinates, the capture time and your device's
+      make and model do not travel with it. What we receive is the picture, not a record of where you
+      were.
+    </p>
+    <p>
+      <strong>Deleting an entry does not delete its photo.</strong> The record of the estimate we ran
+      points at the same picture, so the picture stays on your account.
+    </p>
+    <p>
+      There is a daily limit on how many estimates one account can ask for. It resets at midnight UTC.
+    </p>
+
     <h2>Your account</h2>
     <p>
       KcalOS requires an account, created with <strong>Sign in with Apple</strong> or
@@ -81,6 +116,7 @@
     <h2>What we do not do</h2>
     <ul>
       <li>We do <strong>not</strong> use what you log for anything except giving it back to you in this app. It is not analysed for advertising, not sold, and not shared.</li>
+      <li>We do <strong>not</strong> use your photo or your description for anything except producing the estimate you asked for and keeping the picture with your entry. They are not used to train a model of ours, not sold, and not shared beyond the model provider that answers the request.</li>
       <li>We do <strong>not</strong> send what you log to our analytics service. See “Product analytics” below — that list is exhaustive and no food, weight or target value is on it.</li>
       <li>We do <strong>not</strong> sell, rent or share your data with anyone.</li>
       <li>We do <strong>not</strong> track you across other companies' apps or websites, build an advertising profile of you, or serve advertising.</li>
@@ -128,6 +164,10 @@
     <p>
       Deleting the app removes what is on the device. Your account keeps its copy until you ask us to
       delete it.
+    </p>
+    <p>
+      A photo you sent for an estimate stays with your account. <strong>Deleting a single entry does
+      not remove its photo.</strong>
     </p>
     <p>
       If your device backs up to iCloud, your KcalOS data may be included in that backup. That backup is
