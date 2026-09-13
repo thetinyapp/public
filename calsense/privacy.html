@@ -17,10 +17,11 @@
       Calsense is a nutrition-tracking app. This policy explains what data Calsense handles. The short
       version: Calsense has an account, and your diary is saved to it — the meals you log, your water,
       your supplements, your measurements and the answers you gave during setup — so it comes back after
-      a reinstall or on a new phone. <strong>Meal photos are the exception and stay on the phone that
-      took them.</strong> When you ask for a dish to be analysed, what you send — a description, or a
-      photo of your plate — goes to our server and to an AI provider to make the estimate, and is not
-      kept. Calsense contains no advertising and no cross-app or cross-site tracking. It does use one analytics service, PostHog, described below. Each of those is
+      a reinstall or on a new phone. <strong>Meal photos are saved to your account too, and are not
+      kept on the phone.</strong> When you ask for a dish to be analysed, what you send — a description,
+      or a photo of your plate — goes to our server and to an AI provider to make the estimate; the
+      photo is then stored with your account, and the description and the answer are kept as a record of
+      the request. Calsense contains no advertising and no cross-app or cross-site tracking. It does use one analytics service, PostHog, described below. Each of those is
       explained below.
     </p>
 
@@ -38,10 +39,26 @@
       hydration target, supplement selections, unit preferences and, if you gave it, your ethnicity.
     </p>
     <p>
-      <strong>Meal photos are not part of this.</strong> A picture you take or choose stays in the app's
-      own storage on your phone. We have nowhere to put one and we do not receive one except in transit
-      for an analysis, described below. So a reinstall or a new phone restores your diary and
-      <em>not</em> its pictures, and an entry that came from another device shows no photo.
+      <strong>This changed again on 13 September 2026: meal photos are now part of it, and the
+      phone keeps none.</strong> This section used to say a picture stayed in the app's own storage and
+      that a reinstall restored your diary but not its pictures. Both are now the other way round.
+    </p>
+    <p>
+      A photo you send for an analysis is stored with your account, in two sizes. Your diary carries a
+      reference to it rather than the picture itself, so a reinstall or a second phone shows your
+      photos along with the rest of the diary. The phone holds no copy at all, which means that with no
+      connection the app shows a food icon in place of a picture rather than a stale one.
+    </p>
+    <p>
+      Before anything is stored, each photo is decoded and written out again. That removes the location,
+      the capture time, the device identifier and everything else a camera writes alongside the image.
+      What we keep is the picture, never a record of where you were.
+    </p>
+    <p>
+      <strong>Deleting a meal does not delete its photo.</strong> The record of the analysis that
+      produced the meal refers to the same picture, so the picture outlives the entry. Deleting your
+      account deletes every photo with it, and that is the only thing that removes one. The app says
+      this on the screen where you delete a meal.
     </p>
     <p>
       The app keeps a copy of everything on the phone as well, which is why it opens instantly and works
@@ -83,7 +100,8 @@
       photo of your plate. The server passes it to <strong>Anthropic</strong>, the AI provider whose
       model produces the nutrition estimate, and returns the estimate to your phone. Our server
       does not keep the description or the photo. The meal entry the estimate becomes is saved to your
-      account; the photo shown with it stays on your phone. Anthropic processes what it receives
+      account, and so is the photo — see the section above for how long, and for what is stripped from
+      it first. Anthropic processes what it receives
       as a service provider under its
       <a href="https://www.anthropic.com/legal/commercial-terms">commercial terms</a>, which do not
       permit it to train models on this data; how long Anthropic retains it is governed by those
