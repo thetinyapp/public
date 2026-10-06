@@ -11,11 +11,12 @@
     <header class="site"><span class="brand">CardialOS</span> <span class="by">by thetinyapp</span></header>
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 25 August 2026</p>
+    <p class="updated">Last updated: 7 October 2026</p>
 
     <p>
       CardialOS is a personal cardiac-monitoring app. This policy explains what data CardialOS uses and how it
-      is handled. The short version: <strong>your health data stays on your device.</strong> CardialOS has
+      is handled. The short version: <strong>your health data stays on your device</strong>, except a lab
+      report you choose to read, which is sent to Google Gemini (see <em>Lab reports</em> below). CardialOS has
       an account so it can keep you signed in — signing in does not
       upload your health data, and we never receive, store, or transmit it. We do collect
       anonymized product-usage and crash diagnostics to keep the app working well — never your health
@@ -42,9 +43,10 @@
     <h2>How the data is used</h2>
     <p>
       All processing happens <strong>on your device</strong>. CardialOS turns the data above into recovery,
-      training-load, and fitness readings using on-device calculations. Your physiological settings
-      (such as date of birth, sex, weight, and threshold heart rate) and your app preferences are
-      stored locally on your device only.
+      training-load, and fitness readings using on-device calculations. Your threshold heart rates,
+      method choices, and app preferences are stored on your device only. Your date of birth, sex,
+      height, and weight are also saved to your account (see <em>Your account</em>), so the other
+      TinyApp apps you sign in to can use them without asking again.
     </p>
 
     <h2>Your account</h2>
@@ -59,15 +61,25 @@
     <p>
       On our server we store that identifier, that email address, and session records — which app
       you signed in to, an identifier for the device, and timestamps — so you stay signed in and can
-      revoke your sessions. That is the complete list; <strong>your health data is not on it</strong>
-      and signing in does not sync or upload anything the app has read from Apple Health.
+      revoke your sessions; and the date of birth, sex, height, and weight you enter during setup or
+      in Profile, which the TinyApp apps you sign in to share. That is the complete list;
+      <strong>your health data is not on it</strong> and signing in does not sync or upload anything
+      the app has read from Apple Health.
+    </p>
+
+    <h2>Lab reports</h2>
+    <p>
+      When you choose a lab report in the Biology tab, its contents are sent to Google Gemini, through
+      Google's Firebase AI Logic, to read the values from it. The values it finds are stored on your
+      device. The report is not sent to our server, and nothing is sent unless you choose a report.
     </p>
 
     <h2>What we do not do</h2>
     <ul>
       <li>We do <strong>not</strong> sell, rent, or share your health data with anyone.</li>
       <li>We do <strong>not</strong> use your health data for advertising or marketing.</li>
-      <li>We do <strong>not</strong> transmit your health data off your device or to any server.</li>
+      <li>We do <strong>not</strong> transmit your health data off your device or to any server, except a
+        lab report you choose to read, as described above.</li>
       <li>We do <strong>not</strong> link your account to your health data or to the diagnostics below.</li>
     </ul>
 
